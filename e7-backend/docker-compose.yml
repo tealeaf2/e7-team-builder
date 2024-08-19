@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  django: 
+    image: e7_django
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: /start
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    environment:
+      - DEBUG=1
