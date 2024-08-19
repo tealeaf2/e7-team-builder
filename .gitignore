@@ -1,0 +1,7 @@
+venv/
+db.sqlite3
+.env
+.DS_Store
+__pycache__
+node-env
+nenv-e7
